@@ -10,8 +10,8 @@ typedef struct nodo{
      struct nodo *izq, *der;
 }*ABB;
 
-int numNodos = 0; // nummero de nodos del arbol ABB
-int numK = 0, k;     //  nodos menores que un numero k ingresado
+int numNodos = 0; 
+int numK = 0, k;     
 
 
 /* ---------- Estructura de la cola ---------*/
@@ -249,7 +249,7 @@ int contarHojas(ABB arbol)
 }
 void menu()
 {
-     //system("cls");
+     system("cls");
      cout << "\n\t\t  ..[ ARBOL BINARIO DE BUSQUEDA ]..  \n\n";
      cout << "\t [1]  Insertar elemento                  \n";
      cout << "\t [2]  Mostrar arbol                      \n";
@@ -269,7 +269,7 @@ void menu()
 
 void menu2()
 {
-     //system("cls");   // para limpiar pantalla
+     system("cls");   
      cout << endl;
      cout << "\t [1] En Orden     \n";
      cout << "\t [2] Pre Orden    \n";
@@ -284,7 +284,7 @@ int main()
     int op, op2;
 
 
-    //system("color f9");   // poner color a la consola
+    
     do
     {
           menu();  cin>> op;
@@ -383,7 +383,7 @@ int main()
           }
 
           cout<<"\n\n\n";
-          //system("pause");  // hacer pausa y presionar una tecla para continuar
+          system("pause");  
     }while(op!=11);
 
 }
